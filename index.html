@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cassBlog</title>
+  <div class="bg"></div>
+  <link rel="stylesheet" href="styles/global.css">
+
+<script id="siteTemplate" type="text/x-handlebars-template">
+  <article data-client="{{client}}" data-siteType="{{siteType}}">
+    <img class="sitePhoto" src="{{sitePhotoSrc}}">
+    <h1><a class="webName" href="{{siteURL}}">{{siteName}}</a></h1>
+    <div class="clientName"><h2>{{client}}</h2></div>
+    <div class="siteType"><h3>{{siteType}}</h3></div>
+    <div class="overview"><p>{{overview}}</p></div>
+    <a href="#" class="learnMore">Learn more &rarr;</a>
+  </article>
+</script>
+
+</head>
+<body>
+  <div clas="bg">
+  <main class="black">
+    <header>
+      <div id="titleSpace">
+        <h1  class="headline">Cass Burt</h1>
+        <h3 class="undercard">designer / writer</h3>
+      </div>
+      <nav class="topMenu">
+        <div class="hamburger-menu-phone"><img src="img/hamburger_white.png"></div>
+        <ul>
+          <li class="tab" data-content="portfolio"><a href="#"> Home</a></li>
+          <li class="tab" data-content="about"><a href="#"> About</a></li>
+          <li><a href="https://twitter.com/CassBurt" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com/cass.burt.5" target="_blank">Facebook</a></li>
+          <li><a href="https://github.com/cassburt" target="_blank">Github</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="portfolio" class="tab-content">
+      <div class="filters">
+        <ul id="siteFilters">
+          <li>
+            <select id="client-filter">
+              <option value=""> Filter by Client </option>
+            </select>
+          </li>
+          <li>
+            <select id="siteType-filter">
+              <option value=""> Filter by Site Type </option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section id="about" class="tab-content">
+      <header>
+        <h1>Here's a little bit about me</h1>
+      </header>
+      <div>
+        <p>Born to poor, wayward gypsies, I was raised by a pack of marmuts when my parents were killed in a felting accident.<br>
+          After reurning to civilization, I helped a local village by acting as a water diviner during the massive drought of 1992 (I was lucky, really; don't know the first thing about water divination).<br>
+          And, long story short, now I make websites.</p>
+      </div>
+  </main>
+  </div>
+  <footer>
+    &copy; 2016 me | My blog | it WILL get better (and by "it", I mean this site)
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <script src="scripts/blogSites.js" type="text/javascript"></script>
+  <script src="scripts/site.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+/*BASE - Default styles*/
+ul {
+  list-style: none;
+  display: block;
+  font-size: 1em;
+}
+
+p {
+color: #cccccc;
+font-size: 1em;
+}
+
+h1 {
+color: #996699;
+font-size: 2em;
+}
+
+a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #006699;
+}
+
+/*LAYOUT - major sections*/
+.bg {
+  background-image: url(../img/paper.jpg);
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.black{
+  background: rgba(0,0,0,.7);
+  margin-top: -3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1vw 2vw 1vw 2vw;  /*px sizes changed to em*/
+}
+
+.headline {
+  text-align: center;
+  color: #cccccc;
+  font-size: 3.75em;
+}
+
+.undercard {
+  text-align: center;
+  color: #996699;
+  font-size: 1.875em;
+  margin-top: -3%;
+}
+
+.hamburger-menu-phone {
+  float: right;
+}
+
+.hamburger-menu-phone img {
+  padding-top: 1em;
+  padding-right: 1em;
+  width: 2em;
+  height: auto;
+}
+
+.topMenu {
+  text-align: right;
+}
+
+.topMenu ul {
+  padding-right: 1em;
+  display: none;
+  list-style: none;
+  clear: both;
+}
+
+.topMenu:hover ul {
+    display: block;
+}
+
+.topMenu li {
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+}
+
+.sitePhoto {
+  width: 100%;
+  height: auto;
+}
+
+.template {
+  display: none;
+}
+
+.filters {
+  text-align: center;
+}
+
+.webName {
+  font-size: 1.25em;
+}
+
+.clientName {
+  font-size: 1em;
+  color: #996699;
+}
+
+.siteType {
+  font-size: 1em;
+  color: #006699;
+  font-style: oblique;
+}
+.overview {
+  font-size: 1em;
+  color: #cccccc;
+}
+
+#portfolio {
+  margin: 3%;
+}
+
+/*Phone*/
+@media all and (max-width: 525px) {
+  .black{
+    background: rgba(0,0,0,1);
+    margin-left: -3%;
+    margin-right: -3%;
+    padding: 1vw 2vw 1vw 2vw;  /*px sizes changed to em*/
+  }
+
+}
+
+/*Tablet / smaller displays*/
+@media all and (min-width: 526px) and (max-width: 1024px) {
+  .black{
+    background: rgba(0,0,0,.7);
+    margin-top: -3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1vw 2vw 1vw 2vw;  /*px sizes changed to em*/
+  }
+  .topMenu {
+    text-align: center;
+  }
+  .topMenu ul {
+      display: block;
+      padding-right: none;
+  }
+  .topMenu li {
+    display: inline-block;
+    font-size: .9em;
+    padding-right: 5%;
+  }
+
+  .hamburger-menu-phone {
+    display: none;
+  }
+  .headline {
+    font-size: 3.75em;
+  }
+  .undercard {
+    font-size: 1.875em;
+  }
+  .filters li {
+    display: inline-block;
+    padding: 1em;
+  }
+  .webName {
+    font-size: 1.25em;
+  }
+  .clientName {
+    font-size: 1em;
+  }
+  .siteType {
+    font-size: 1em;
+  }
+  .overview {
+    font-size: 1em;
+  }
+  .learnMore {
+    font-size: 1em;
+  }
+}
+
+/*Computer*/
+@media all and (min-width: 1025px) {
+  .black{
+    background: rgba(0,0,0,.7);
+    margin-top: -3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1vw 2vw 1vw 2vw;  /*px sizes changed to em*/
+  }
+  .topMenu {
+    text-align: center;
+  }
+  .topMenu ul {
+      display: block;
+      padding-right: none;
+  }
+  .topMenu li {
+    display: inline-block;
+    font-size: 1.5vw;
+    padding-right: 5%;
+  }
+
+  .hamburger-menu-phone {
+    display: none;
+  }
+  .headline {
+    font-size: 6vw;
+  }
+  .undercard {
+    font-size: 3vw;
+  }
+  .filters li {
+    display: inline-block;
+    padding: 1.5vw;
+  }
+  .webName {
+    font-size: 4vw;
+  }
+  .clientName {
+    font-size: 1.6vw;
+  }
+  .siteType {
+    font-size: 1.6vw;
+  }
+  .overview {
+    font-size: 1.6vw;
+  }
+  .learnMore {
+    font-size: 1.6vw;
+  }
+}
